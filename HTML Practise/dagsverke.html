@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Johan Astrom </title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <!-- awesome fonts -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="newerstyles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <!-- Jquery ska vara innan materialize scriptet -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+
+            // hide #back-top first
+            $("#myBtn").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#myBtn').fadeIn();
+                    } else {
+                        $('#myBtn').fadeOut();
+                    }
+                });
+
+                // scroll body to 0px on click
+                $('#myBtn').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 400);
+                    return false;
+                });
+            });
+
+            });
+        </script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation bar at top -->
+    <nav>
+      <div class="nav-wrapper z-depth-3 black lighten-2t">
+        <a href="#" class="brand-logo right amber-text">JOHANASTROM.COM</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down amber-text">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#languages">LANGUAGES</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+  </nav>
+
+    <!-- Home picture -->
+    <div class="row no-padding-bottom" style="height: 1000px;" id="home">
+
+        <div class="col s4 amber center black-text" style=" display: table; height:100% ;">
+            <div class="" style="display: table-cell; vertical-align: middle;">
+                <i class="fas fa-desktop" style="font-size: 256px;"></i>
+            </div>
+
+        </div>
+        <div class="col s8 light-blue" style="height:100%" id="frontPageImage">
+        </div>
+    </div>
+
+
+    <!-- About section -->
+    <div class="row no-padding-bottom" style="height: 400px;" id="about">
+
+        <h2 class="amber-text" style="text-align:center;">ABOUT</h2>
+
+        <p> computer scientist and web nerd </p>
+
+        <p> studies computer science at KTH in Stockholm </p>
+
+        <p> rock climbing and sailing after work </p>
+
+    </div>
+
+    <!-- Language section -->
+    <div class="row no-padding-bottom" style="height: 400px;" id="languages">
+
+        <div class="col s12 black" style="height:30%">
+            <h2 class="amber-text" style="text-align:center;">LANGUAGES AND FRAMEWORKS</h2>
+
+        </div>
+
+        <div class="col s12 black amber-text center" style="height:70%" id="frameworkIcons">
+            <i class="fab fa-java"></i>
+            <i class="fab fa-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-angular"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fab fa-jenkins"></i>
+            <i class="fab fa-linux"></i>
+            <i class="fab fa-aws"></i>
+        </div>
+
+    </div>
+
+    <!-- EXPERIENCE section -->
+    <div class="row no-padding-bottom" style="height: 600px;" id="experience">
+
+        <div class="col s12 light-blue center" style="height:25%">
+
+            <h2 class="amber-text" style="text-align:center;">EXPERIENCE</h2>
+
+
+
+        </div>
+
+        <div class="col s12 light-blue center" style="height:25%">
+            <img src="https://static.wixstatic.com/media/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png/v1/fill/w_231,h_58,al_c,usm_0.66_1.00_0.01/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png">
+        </div>
+
+        <div class="col s12 light-blue center" style="height:25%">
+            <img src="https://tangar.io/wp-content/themes/tangar/img/tangar-logo-white.svg" style="width: 200px;">
+        </div>
+
+        <div class="col s12 light-blue center" style="height:25%">
+            <img src="http://jesperastrom.com/wordpress/wp-content/uploads/contact-info.png" style="width: 200px;">
+        </div>
+    </div>
+
+    <!--Contact section  -->
+
+      <div class="row no-padding-bottom" id="contact">
+        <div class="col s12">
+            <h2 class="amber-text" style="text-align:center;">CONTACT</h2>
+        </div>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s4 offset-s4">
+              <input placeholder="e.g. Johan Astrom" id="full_name" type="text" class="validate">
+              <label for="full_name">Full Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4 offset-s4">
+              <input placeholder="e.g johaast@kth.se" id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s4 offset-s4">
+              <input placeholder="johanastrom.com AB" id="company" type="text" class="validate">
+              <label for="company">Company</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- contact info -->
+      <div class="row no-padding-bottom" style="height: 200px;">
+
+          <div class="col s12 white center" style="height: 100%" id="contactIcons">
+
+                <a href="https://www.facebook.com/johan.astrom">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+                <a href="https://twitter.com/DjJeanJacques">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+
+                <a href="https://www.instagram.com/johan.astrom/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/Iceweazel">
+                    <i class="fab fa-github-square"></i>
+                </a>
+
+                <a href="mailto:johaast@kth.se">
+                    <i class="fas fa-at"></i>
+                </a>
+
+          </div>
+
+      </div>
+
+    <button class ="amber" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-home"></i></button>
+
+
+
+</body>
+
+</html>
