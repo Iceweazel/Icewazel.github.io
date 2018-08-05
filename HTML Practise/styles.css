@@ -1,0 +1,27 @@
+h1 {
+  font-family:oswald;
+  text-align: center;
+  color:#FAAC58;
+  font-size:72px;
+}
+h2 {
+  font-family:oswald;
+  color:#FAAC58;
+
+}
+a {
+  font-family:montserrat;
+  color:#8181F7;
+}
+li {
+  font-family:montserrat;
+  font-size:18px;
+  color:#FA58F4;
+}
+body {
+  background-color:#CEF6F5;
+}
+p {
+  font-family: montserrat;
+  color: #FA58F4;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+
+  <title> My First HTML page </title>
+  <!--link rel="stylesheet" href="styles.css"-->
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse:collapse;
+    }
+    .astrom {
+      background-color:tomato;
+    }
+  </style>
+
+</head>
+
+<body style="background-color:#F4C2C2">
+
+  <!-- This is just a comment -->
+
+  <h1 style="color:#7FFFD4;" title="My first website"> My first heading </h1>
+
+  <ul style="list-style-type:circle">
+    <li>Happy</li>
+    <li>Productive</li>
+    <li>Energetic</li>
+  </ul>
+
+  <hr>
+  <!-- this link was not pretty
+  <a href="https://www.enigio.com">Enigio AB</a>
+  -->
+  <br>
+
+  <img src="resources/johan.jpg" style="width:10%;">
+  <br>
+  <a href="https://www.facebook.com">
+    <img src="resources/johan.jpg" alt="facebook" style="width:10%;">
+  </a>
+  <div >
+    <button class="astrom"> Button </button>
+  </div>
+
+  <div class="astrom">
+    <table style="width=100%; padding: 15px; border: 1px solid black;">
+
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td>Johan</td>
+        <td>Astrom</td>
+        <td>25</td>
+      </tr>
+
+      <tr>
+        <td>LouLou</td>
+        <td>Pei</td>
+        <td>22</td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+</body>
+
+  <div id="testScript">
+
+  </div>
+</html>
+
+<script>
+  document.getElementById("testScript").innerHTML = Date();
+</script>
