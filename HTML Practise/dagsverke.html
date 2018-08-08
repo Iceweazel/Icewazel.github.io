@@ -13,33 +13,8 @@
         <!-- Jquery ska vara innan materialize scriptet -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script>
-        $(document).ready(function(){
+        <script src="scrollup.js"></script>
 
-            // hide #back-top first
-            $("#myBtn").hide();
-
-            // fade in #back-top
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('#myBtn').fadeIn();
-                    } else {
-                        $('#myBtn').fadeOut();
-                    }
-                });
-
-                // scroll body to 0px on click
-                $('#myBtn').click(function () {
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 400);
-                    return false;
-                });
-            });
-
-            });
-        </script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
@@ -111,7 +86,7 @@
     <!-- EXPERIENCE section -->
     <div class="row no-padding-bottom" style="height: 600px;" id="experience">
 
-        <div class="col s12 light-blue center" style="height:25%">
+        <div class="col s12 white center" style="height:25%">
 
             <h2 class="amber-text" style="text-align:center;">EXPERIENCE</h2>
 
@@ -119,22 +94,23 @@
 
         </div>
 
-        <div class="col s12 light-blue center" style="height:25%">
-            <img src="https://static.wixstatic.com/media/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png/v1/fill/w_231,h_58,al_c,usm_0.66_1.00_0.01/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png">
+        <div class="col s12 white center" style="height:25%">
+            <img src="https://static.wixstatic.com/media/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png/v1/fill/w_231,h_58,al_c,usm_0.66_1.00_0.01/488cbc_49cfc960442444f8a5db8134a936636b~mv2_d_5201_1312_s_2.png"
+            style="filter: invert(100%);">
         </div>
 
-        <div class="col s12 light-blue center" style="height:25%">
-            <img src="https://tangar.io/wp-content/themes/tangar/img/tangar-logo-white.svg" style="width: 200px;">
+        <div class="col s12 white text center" style="height:25%">
+            <img src="https://tangar.io/wp-content/themes/tangar/img/tangar-logo-white.svg" style="width: 200px; filter: invert(100%);">
         </div>
 
-        <div class="col s12 light-blue center" style="height:25%">
+        <div class="col s12 white center" style="height:25%">
             <img src="http://jesperastrom.com/wordpress/wp-content/uploads/contact-info.png" style="width: 200px;">
         </div>
     </div>
 
     <!--Contact section  -->
 
-      <div class="row no-padding-bottom" id="contact">
+      <div class="row no-padding-bottom black" id="contact">
         <div class="col s12">
             <h2 class="amber-text" style="text-align:center;">CONTACT</h2>
         </div>
@@ -186,10 +162,10 @@
                 </a>
 
           </div>
-          <footer class="page-footer black">
+          <footer class="page-footer white">
 
             <div class="footer copyright" id="copyrightInfo">
-              <div class="container">
+              <div class="container black-text">
                 © 2018 johan astrom, All rights reserved.
               </div>
             </div>
